@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#">
-    <img src="../assets/fenrir-logo.png" alt="Fenrir Logo">
+    <img src="./assets/fenrir-logo.png" alt="Fenrir Logo">
   </a>
   <br>
   <strong>Network-wide DNS filtering with a custom Fenrir dashboard</strong>
@@ -9,7 +9,7 @@
 
 # Fenrir Web Interface
 
-<img src="../assets/dashboard.png" alt="Fenrir Web interface">
+<img src="./assets/dashboard.png" alt="Fenrir Web interface">
 
 **Fenrir** is a customized web interface for [Pi-hole](https://github.com/pi-hole), with a new visual identity and UI adjustments inspired by the mythical wolf **Fenrir**, a symbol of strength and protection.
 
