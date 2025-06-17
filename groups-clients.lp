@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2019 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2019 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -54,7 +54,7 @@ mg.include('scripts/lua/header_authenticated.lp','r')
                         </p>
                         <p>Note that client recognition by IP addresses (incl. subnet ranges) are preferred over MAC address, host name or interface recognition as
                             the two latter will only be available after some time.
-                            Furthermore, MAC address recognition only works for devices at most one networking hop away from your Pi-hole.
+                            Furthermore, MAC address recognition only works for devices at most one networking hop away from your Fenrir.
                         </p>
                     </div>
                 </div>

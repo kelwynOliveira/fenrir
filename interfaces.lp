@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2024 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2024 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -11,7 +11,7 @@ mg.include('scripts/lua/header_authenticated.lp','r')
 ?>
 <!-- Title -->
 <div class="page-header">
-    <h1>Pi-hole interface overview</h1>
+    <h1>Fenrir interface overview</h1>
 </div>
 <div class="row">
     <div class="col-md-12">

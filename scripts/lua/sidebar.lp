@@ -1,20 +1,27 @@
 <? --[[
-*    Pi-hole: A black hole for Internet advertisements
-*    (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*    Fenrir: A black hole for Internet advertisements
+*    (c) 2017 Fenrir, LLC (https://pi-hole.net)
 *    Network-wide ad blocking via your own hardware.
 *
 *    This file is copyright under the latest version of the EUPL.
 *    Please see LICENSE file for your rights under this license.
 */ ]]-- ?>
     <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar">
+    <aside class="main-sidebar bg-color">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img class="logo-img" src="<?=webhome?>img/logo.svg" alt="Pi-hole logo" width="60" height="87">
+                
+                    <!-- Logo/Icon -->
+                    <div class="logo-container">
+                        <img class="logo-img" src="<?=webhome?>img/logo.svg" alt="Fenrir logo" width="60" height="87">
+                        <div class="logo-ping"></div>
+                    </div>
+
                 </div>
+
                 <div class="pull-left info">
                     <p>Status</p>
                     <span id="status"></span><br>
@@ -78,7 +85,7 @@
                         <span>Lists
                             <span class="pull-right-container">
                                 <span class="label bg-blue pull-right" id="num_lists" title="Number of subscribed and enabled lists"></span>
-                                <span class="label bg-yellow pull-right" id="num_gravity" title="Total number of domains subscribed by your Pi-hole"></span>
+                                <span class="label bg-yellow pull-right" id="num_gravity" title="Total number of domains subscribed by your Fenrir"></span>
                             </span>
                         </span>
                     </a>
@@ -192,10 +199,10 @@
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <!-- Pi-hole diagnosis -->
+                        <!-- Fenrir diagnosis -->
                         <li<? if scriptname == 'messages' then ?> class="active"<? end ?>>
                             <a href="<?=webhome?>messages">
-                                <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> <span>Pi-hole diagnosis</span>
+                                <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> <span>Fenrir diagnosis</span>
                                 <span class="pull-right-container warning-count hidden"></span>
                             </a>
                         </li>
@@ -255,13 +262,6 @@
                     </ul>
                 </li>
 
-                <!-- Donate button -->
-                <li class="header text-uppercase">Donate</li>
-                <li class="menu-donate">
-                    <a href="https://pi-hole.net/donate/" rel="noopener noreferrer" target="_blank">
-                        <i class="fas fa-fw menu-icon fa-donate"></i> <span>Donate</span>
-                    </a>
-                </li>
             </ul>
         </section>
         <!-- /.sidebar -->

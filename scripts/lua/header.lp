@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2017 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -67,7 +67,7 @@ is_authenticated = mg.request_info.is_authenticated
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pi-hole <?=hostname?></title>
+    <title>Fenrir <?=hostname?></title>
     <meta name="csrf-token" content="<?=mg.request_info.csrf_token?>">
 
     <link rel="apple-touch-icon" href="<?=webhome?>img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -122,12 +122,14 @@ is_authenticated = mg.request_info.is_authenticated
     <link rel="stylesheet" href="<?=pihole.fileversion('style/pi-hole.css')?>">
 <? if theme.name == "default-auto" then ?>
     <link rel="stylesheet" href="<?=pihole.fileversion('style/themes/default-dark.css')?>" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="<?=pihole.fileversion('style/themes/default-light.css')?>" media="not (prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="<?=pihole.fileversion('style/themes/default-dark.css')?>" media="not (prefers-color-scheme: dark)">
 <? else ?>
     <link rel="stylesheet" href="<?=pihole.fileversion('style/themes/' ..theme.name.. '.css')?>">
 <? end ?>
 
     <noscript><link rel="stylesheet" href="<?=pihole.fileversion('vendor/js-warn/js-warn.css')?>"></noscript>
+    
+    <link rel="stylesheet" href="<?=pihole.fileversion('style/new-style.css')?>">
 
     <!-- scripts -->
     <script src="<?=pihole.fileversion('vendor/jquery/jquery.min.js')?>"></script>

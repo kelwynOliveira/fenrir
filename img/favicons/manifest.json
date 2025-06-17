@@ -1,6 +1,6 @@
 {
-    "name": "Pi-hole Admin Console",
-    "short_name": "Pi-hole",
+    "name": "Fenrir Admin Console",
+    "short_name": "Fenrir",
     "icons": [
         {
             "src": "android-chrome-192x192.png",

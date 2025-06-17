@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2023 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -42,7 +42,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                     <div class="box-body">
                         <div class="row">
                             <div class="col-lg-12">
-                                    <p>Pi-hole's long-term database is stored at <code id="files.database"></code></p>
+                                    <p>Fenrir's long-term database is stored at <code id="files.database"></code></p>
                                 <div>
                                     <input type="checkbox" id="database.DBimport" data-key="database.DBimport" title="log-queries">
                                     <label for="database.DBimport"><strong>Should FTL load queries from the database on (re)start?</strong></label>

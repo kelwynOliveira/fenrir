@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2017 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -185,7 +185,7 @@ mg.include('scripts/lua/header_authenticated.lp','r')
                         </tr>
                     </tfoot>
                 </table>
-                <p>Note: Queries for <code>pi.hole</code> and the hostname are never logged.</p>
+                <p>Note: Queries for <code>Fenrir</code> and the hostname are never logged.</p>
             </div>
             <!-- /.box-body -->
         </div>

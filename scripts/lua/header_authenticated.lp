@@ -1,7 +1,7 @@
 <?
 --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2017 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -22,7 +22,18 @@ mg.include('header.lp','r')
     <script src="<?=pihole.fileversion('vendor/bstreeview/bstreeview.min.js')?>"></script>
     <script src="<?=pihole.fileversion('scripts/js/logout.js')?>"></script>
 </head>
-<body class="<?=theme.name?> hold-transition sidebar-mini <? if pihole.boxedlayout() then ?>layout-boxed<? end ?> logged-in page-<?=pihole.format_path(mg.request_info.request_uri)?>" data-apiurl="<?=pihole.api_url()?>" data-webhome="<?=webhome?>">
+<body class="<?=theme.name?> hold-transition sidebar-mini <? if pihole.boxedlayout() then ?>layout-boxed<? end ?> logged-in page-<?=pihole.format_path(mg.request_info.request_uri)?> body" data-apiurl="<?=pihole.api_url()?>" data-webhome="<?=webhome?>">
+
+<!-- Background decorative elements -->
+<div class="background-decorations">
+    <div class="decoration-circle decoration-circle-1"></div>
+    <div class="decoration-circle decoration-circle-2"></div>
+    <div class="decoration-circle decoration-circle-3"></div>
+    <div class="decoration-icon decoration-snowflake">❄</div>
+    <div class="decoration-icon decoration-moon">🌙</div>
+</div>
+
+
 <noscript>
     <!-- JS Warning -->
     <div>
@@ -39,16 +50,17 @@ mg.include('header.lp','r')
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
-        <a href="<?=webhome?>" class="logo">
+        <a href="<?=webhome?>" class="logo bg-color">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini">P<strong>h</strong></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Pi-<strong>hole</strong></span>
+            <span class="logo-lg main-title">Fenrir</span>
+
         </a>
         <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top">
+        <nav class="navbar navbar-static-top bg-color">
             <!-- Sidebar toggle button-->
-            <button class="sidebar-toggle-svg" data-toggle="push-menu" aria-label="Toggle Navigation">
+            <button class="sidebar-toggle-svg bg-color" data-toggle="push-menu" aria-label="Toggle Navigation">
                 <i aria-hidden="true" class="fa fa-angle-double-left"></i>
                 <span class="warning-count hidden" id="top-warning-count"></span>
             </button>
@@ -67,23 +79,13 @@ mg.include('header.lp','r')
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img class="logo-img" src="<?=webhome?>img/logo.svg" alt="Pi-hole Logo" width="50" height="50">
-                                <p>
-                                    Open Source Ad Blocker
-                                </p>
+                                <img class="logo-img" src="<?=webhome?>img/logo.svg" alt="Fenrir Logo" width="50" height="50">
                             </li>
                             <!-- Menu Body -->
                             <li class="user-body" id="advanced-info" style="display:none;"></li>
                             <!-- Menu Footer -->
                             <li class="user-footer">
-                                <a class="btn-link" href="https://pi-hole.net/" rel="noopener noreferrer" target="_blank">
-                                    <? mg.include('../../img/logo-bw.svg', 'r') ?>
-                                    Pi-hole Website
-                                </a>
                                 <a class="btn-link" href="https://docs.pi-hole.net/" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fa-solid fa-circle-question"></i> Documentation</a>
-                                <a class="btn-link" href="https://discourse.pi-hole.net/" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fab fa-discourse"></i> Pi-hole Discourse</a>
-                                <a class="btn-link" href="https://github.com/pi-hole" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fab fa-github"></i> GitHub</a>
-                                <a class="btn-link" href="https://discourse.pi-hole.net/c/announcements/5" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fa-solid fa-rocket"></i> Pi-hole Releases</a>
                                 <? if pihole.needLogin() then ?>
                                 <a class="btn-link" href="#" id="logout-button"><i class="fa-fw menu-icon fa-solid fa-arrow-right-from-bracket"></i> Log out</a>
                                 <? end ?>

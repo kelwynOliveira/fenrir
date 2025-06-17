@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2017 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -50,12 +50,6 @@ end
     </div> <!-- /.content-wrapper -->
 
     <footer class="main-footer">
-        <div class="row row-centered text-center">
-            <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://pi-hole.net/donate/" rel="noopener noreferrer" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
-            </div>
-        </div>
-
         <div class="row row-centered text-center version-info">
             <div class="col-xs-12 col-sm-12 col-md-10">
                 <ul class="list-inline" id="versions"></ul>

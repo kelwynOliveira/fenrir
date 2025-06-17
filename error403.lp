@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+*  Fenrir: A black hole for Internet advertisements
+*  (c) 2023 Fenrir, LLC (https://pi-hole.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -17,7 +17,7 @@ mg.include('scripts/lua/header.lp','r')
                     <h3><i class="fa fa-times-circle text-danger"></i> Oops! Access denied.</h3>
                     <p>
                         You don't have permission to access <code><?=mg.request_info.request_uri?></code> on this server.<br>
-                        Did you mean to go to <a href="<?=pihole.webhome()?>">your Pi-hole's dashboard</a> instead?
+                        Did you mean to go to <a href="<?=pihole.webhome()?>">your Fenrir's dashboard</a> instead?
                     </p>
             </div>
         </section>
